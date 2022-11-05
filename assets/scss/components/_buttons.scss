@@ -1,0 +1,45 @@
+/* Common Button's Style */
+.primary-btn{
+	color: $color-white;
+	font-size: toRem(18);
+	font-weight: 500;
+	font-family: $font-secondary;
+	background-color: $color-secondary;
+	padding: toEm(15) toEm(28);
+	@extend %transition;
+	&:hover,
+	&:focus{
+		color: $color-secondary;
+		background-color: $color-primary;
+	}
+	@include mobile{
+		font-size: toRem(16);
+	}
+}
+
+.tag-btn{
+	font-size: toRem(14);
+	font-weight: 600;
+	font-family: $font-secondary;
+	border: 1px solid $color-secondary;
+	padding: 0.2rem 1rem;
+	@extend %transition;
+	&:hover{
+		background-color: $color-primary;
+		border-color: $color-primary;
+	}
+}
+
+.navigation-btn{
+	font-size: 1.1rem;
+	font-weight: 600;
+	font-family: $font-secondary;
+	@extend %transition;
+	&__icon{
+		font-size: 1.5rem;
+	}
+	&:hover,
+	&:focus{
+		color: $color-primary;
+	}
+}
